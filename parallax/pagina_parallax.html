@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        div{/*As Divs irao ocupar 100% da tela*/
+            width: 100%;
+            height: 100vh;
+        }
+        .sec1{
+            background: url(tema.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+/*            background-position: center;*/
+            background-attachment: fixed;
+            color: aliceblue;
+            font-size: 60px;
+            /*Posicionar tetxo no centro*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .sec1 h1{
+            text-shadow: 3px 5px 15px green;/*Sombra da letra*/
+        }
+        /*.h1menor{
+            font-size: 40px;
+        }*/
+        .sec2{
+            box-sizing: border-box;
+            padding: 50px;
+        }
+        .sec2 p{
+            font-size: 20px;
+            text-indent: 50px;
+            text-align: justify;
+        }
+        .sec2 h1{
+            font-size: 50px;
+        }
+        .sec3{
+            background: url(tema1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .foto{
+            width: 250px;
+            height: 250px;
+            background-image: url(link.jpg);
+            /*AJUSTAR A IMAGEM NA DIV*/
+            background-size: cover;
+            background-position: center;
+            
+            float: left;
+            margin: 15px;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="sec1">
+        <h1>Master</h1>
+        <h1 class="h1menor">Sword</h1>
+    </div>
+    
+    <div class="sec2">
+      <div class="foto"></div>
+       <h1>Título do Tema</h1><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quod veniam placeat eius, deleniti perspiciatis minus eligendi assumenda quam doloribus illo nihil molestias ducimus molestiae vero temporibus tempore saepe ad! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nostrum, quia veniam. Quisquam quod provident saepe necessitatibus itaque excepturi, et rem quis enim, reiciendis maiores eum quos, sunt placeat laboriosam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda laboriosam quae, incidunt quia iusto placeat sit et atque dolorum nesciunt voluptate, excepturi natus enim reprehenderit. In dignissimos perferendis explicabo ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe numquam adipisci aliquam, laborum, eum corporis voluptate optio voluptatem ducimus fuga deserunt odit. Repellat, tenetur cumque neque. Doloremque repellendus culpa saepe?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quisquam tempora porro consectetur qui ipsum quaerat unde, aliquam at a. In atque deserunt quia, voluptates nisi, alias cupiditate facere eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis inventore harum quibusdam enim ut possimus ullam expedita. At aliquam quidem vel quo laudantium, labore rerum pariatur perferendis enim voluptate placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione repudiandae, consectetur quibusdam architecto mollitia quas, reiciendis nulla dolor in doloribus quos ipsa tenetur pariatur necessitatibus accusantium totam, harum aliquam. Temporibus.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam praesentium optio ipsa repellat a voluptates perferendis, iure non veniam quas provident distinctio atque eaque, corrupti expedita sed rem explicabo.</p>
+    </div>
+    <div class="sec3"></div>
+</body>
+</html>

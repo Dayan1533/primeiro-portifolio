@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartão de produto</title>
+    <style>
+        *{/*Ajustes inicias que mudam toda a página*/
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            
+        }
+        body{
+            background-image: radial-gradient(#c9efff,#75d3fc,#1da3de);
+            background-repeat: repeat;
+            background-size:cover;
+            height: 100vh;
+        }
+        .cabecalho{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;/*Dá um espaço entre as letrass*/ 
+            padding: 20px;/*distância lateral*/
+/*            background-color: black;*/
+        }
+        .cabecalho ul{
+            display: flex;
+            list-style-type: none;/*Tira o pontin da lista*/
+        }
+        .cabecalho a{
+            display: block;
+            color: white;
+        }
+        .cabecalho ul li a{
+            text-decoration: none;
+            padding: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .cabecalho ul li a:hover{
+            color: blueviolet;
+            transition: .3s;
+        }
+        .cabecalho h2 a{
+            text-decoration: none;
+/*            list-style-type: none;*/
+            font-size: 30px;
+        }
+        .cabecalho h2 a:hover{
+            transform: scale(1.2);
+            transition: .5s;
+            
+        }
+        /*.imagem{
+            Cria uma div imagem com img dentro quando a imagem não for quadrada e for ficar redonda!
+        
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: url();
+            background-size: cover;
+            background-position: center;
+        }*/
+/*--------------------------------------------------------------------------------------*/
+        /*Parte Relacionada com as divs*/
+        .conteudo{
+            display: flex;
+            width: 70%;
+            height: 80vh;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center;
+/*    Serve para centralizar
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+*/
+            flex-wrap: wrap;/*deixa responsível*/
+            
+        }
+        .cartao{
+            background-color: aliceblue;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            text-align: justify;
+            border-radius: 0% 10%;
+            margin: 10px;
+        }
+        .cartao:hover{
+            transform: scale(1.15);
+            transition: .3s;
+            box-shadow: 0px 0px 25px  rgba(0,0,0,.6);
+        }
+        .cartao img{/*quando a imagem for quadrada e é para ficar redonda!*/
+            width: 120px;
+            border-radius: 50%;
+            background-color: #73f778;
+        }
+/*--------------------------------------------------------------------------------------*/
+        /*Redes Socias no canto da tela!!*/
+        .menu-social{
+            position: fixed;
+            top: 38%;
+        }
+        .lista{
+            list-style-type: none;
+        }
+        .menu-social ul li a{
+            font-size: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            padding: 5px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .menu-social li{
+            width: 40px;
+            background-color: #4242e2;
+            border-radius: 0px 8px 8px 0px;
+        }
+        .menu-social li:hover{
+            width: 55px;
+            transition: .4s;
+        }
+        .lista li:nth-child(1){
+            background-color: #3b5999;
+        }
+        .lista li:nth-child(2){
+            background-color: #e4405f;
+        }
+        .lista li:nth-child(3){
+            background-color: #fffc00;
+        }
+        .lista li:nth-child(4){
+            background-color: #34465d;
+        }
+        .lista li:nth-child(5){
+            background-color: #25d366;
+        }
+    </style>
+</head>    
+<body>
+    <div class="cabecalho">
+        
+            <h2><a href="">LOGO</a></h2>
+<!--        <h2><a href=""> PAULÃO DO <spam style="color:red">X</spam>VIDEOS</a></h2>-->
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">galeria</a></li>
+            <li><a href="">produtos</a></li>
+            <li><a href="">contatos</a></li>
+        </ul>
+        </div>
+        <div class="conteudo">
+            <div class="cartao">
+                <img src="link2.png" alt="">
+                <h3>Título</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum a, eum quas soluta repudiandae aspernatur totam odit. Eaque, aliquid a temporibus, nesciunt, officiis dolore velit facere iste perferendis placeat quis?</p>
+            </div>
+            <div class="cartao">
+                <img src="link2.png" alt="">
+                <h3>Título</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias perspiciatis beatae quo maiores accusamus laborum? Praesentium error ad laboriosam repellendus consequatur nostrum earum esse sunt eligendi, rem obcaecati.</p>
+            </div>
+            <div class="cartao">
+                <img src="link2.png" alt="">
+                <h3>Título</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque inventore ea, sed blanditiis possimus quam in et amet iste vitae rerum nisi eaque earum hic sunt consectetur, repellat voluptatibus molestiae.</p>
+            </div>
+        </div>
+        <div class="menu-social">
+            <ul class="lista">
+                <li><a href="">f</a></li>
+                <li><a href="">i</a></li>
+                <li><a href="">s</a></li>
+                <li><a href="">t</a></li>
+                <li><a href="">w</a></li>
+            </ul>
+        </div>
+</body>
+</html>

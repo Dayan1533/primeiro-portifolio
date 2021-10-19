@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Cadastro</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            color:/*#176464*/#bbf5f5;
+            /*background-color:#d4dce0;*/
+            display:flex;
+            justify-content: center;
+            align-items: center;
+         /*   background-image: radial-gradient(#77C1D1,#4C7A85,#273F45);*/
+            background-image: radial-gradient(#273F45,#4C7A85,#77C1D1);
+            height: 100vh;
+        }
+        section{
+            position: relative;
+            width: 30vw;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+        input[type=text],input[type=email],input[type=number],select{
+            width: 60%;
+        }
+        input[type=submit],input[type=reset]{
+            border-radius: 15px;
+            padding: 10px;
+            width: 100px;
+            background-color: #a1cde3;
+        }
+        input[type=submit]:hover,input[type=reset]:hover{
+            background-color: #7b9daf;
+            color:#d4dce0;
+        }
+        
+    </style>
+</head>
+<body>
+     <section>
+      <h1>Formulário de Cadastro</h1>
+       <form name="formulario" action="insert.php" method="post">
+        <fieldset>
+            <legend>Cadastro de Pessoa</legend>
+             <label for="">Nome:</label><br>
+              <input type="text" name="nome" required placeholder="Escreva seu nome"><br>
+              <label for="">Sobrenome</label><br>
+             <input type="text" name="sobrenome"><br>
+              <label for="">CPF</label><br>
+              <input type="text" name="cpf"><br>
+
+              <label for="">Sexo</label>
+              <br>
+              <input type="radio" name="sexo" value="Feminino">Feminino
+              <input type="radio" name="sexo" value="Masculino">Masculino
+              <input type="radio" name="sexo" value="o">Outros<br>
+
+              <label for="">E-mail</label><br>
+              <input type="email" name="email"><br>
+              <label for="">Fone</label><br>
+              <input type="number" name="fone" required><br>
+              <label for="estado">Estado - INPUT SELECT</label><br>
+                <select name="estado" required>
+                    <option value="">Escolha Estado</option>
+                    <option value="Ac">Acre</option>
+                    <option value="Al">Alagoas</option>
+                    <option value="Am">Amazonas</option>
+                    <option value="Ap">Amapá</option>
+                    <option value="Ba">Bahia</option>
+                    <option value="Pi">Piauí</option>
+                    <option value="Ce">Ceará</option><br>
+                </select>
+             <br><br>
+              <input type="submit" value="Salvar">
+              <input type="reset" value="Limpar">
+          </fieldset> 
+       </form>
+    </section>
+</body>
+</html>

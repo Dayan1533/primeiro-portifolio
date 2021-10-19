@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        a{
+            text-decoration: none;/*Tirar o traço de baixo do link*/
+        }
+        body{
+            background-image:radial-gradient(#57be6b,#37af37,#0aac11);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            
+        }
+        .cabecalho{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            font-size: 30px;
+            background-image: linear-gradient(#0aac11,#37af37,#57be6b)
+        }
+        .cabecalho h2 a{
+            color: white;
+            text-shadow: 2px 3px 20px rgba(0,0,0, .5);
+            font-family: Algerian;
+        }
+        .menu{
+            position: absolute;
+            float: left;
+            top: 0;
+/*            background-color: beige;*/
+            height: 100%;
+            width: 200px;
+            box-shadow: 4px 0 5px rgba(0,0,0, .4);
+            transform: translateX(-120px);/*Esconde o menu*/
+            transition: .2s;
+        }
+        .menu:hover{
+            transform: translateX(0);/*Faz o menu aparecer de novo*/
+            transition: .5s;
+        }
+        .menu ul{
+            position: relative;
+            top: 25%;
+            list-style-type: none;/*Tira o Pontin da lista*/
+        }
+        .menu li{
+            width: 120px;
+            border-radius: 0px 10px 10px 0px;
+        }
+        .menu li:hover{
+            width: 105px;
+            transition: .4s;
+        }
+        .menu ul li a{
+            color: white;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .lista li:nth-child(1){
+            background-color: #3b5999;
+            
+        }
+        .lista li:nth-child(2){
+            background-color: #e4405f;
+        }
+        .lista li:nth-child(3){
+            background-color: #fffc00;
+        }
+        .lista li:nth-child(4){
+            background-color: #34465d;
+        }
+        .lista li:nth-child(5){
+            background-color: #25d366;
+        }
+        .lista li:nth-child(6){
+            background-color: #3b5999;
+        }
+        .lista li:nth-child(7){
+            background-color: #e4405f;
+        }
+        .lista li:nth-child(8){
+            background-color: #fffc00;
+        }
+        .lista li:nth-child(9){
+            background-color: #34465d;
+        }
+        .lista li:nth-child(10){
+            background-color: #25d366;
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+       <img src="gif.gif" align="center" width="5%"alt="">
+        <h2><a href="index.html">Portfólio</a></h2>
+        <img src="gif.gif" align="center" width="5%"alt="">
+    </div>
+<!--    .menu>ul>(li>a)*10-->
+    <div class="menu">
+        <ul class="lista">
+            <li><a href="farcry/Trabalho.html" target="trabalhos">Homenagem</a></li>
+            <li><a href="Curriculo/curriculo.html" target="trabalhos">Currículo</a></li>
+            <li><a href="parallax/pagina_parallax.html" target="trabalhos">Parallax</a></li>
+            <li><a href="Cartao_Produtos/cartao_produto.html" target="trabalhos">Produtos</a></li>
+            <li><a href="Formulario/formulario.html" target="trabalhos">Formulário</a></li>
+            <li><a href="primeira_pagina/primeira_pagina.html" target="trabalhos">1° Pág</a></li>
+            <li><a href="Logo_Ifpi/ifpiDayan.html" target="trabalhos">Logo IFPI</a></li>
+            <li><a href="Zelda/pagina.html" target="trabalhos">Zelda</a></li>
+            <li><a href="Concatenacao/concatenacao.html" target="trabalhos">Concat.</a></li>
+            <li><a href="divs/layoutdivs.html" target="trabalhos">Divs teste</a></li>
+        </ul>
+<!--        Usaremos iframe para mostrar as páginas dentro da página dentro da página portfólio-->
+    </div>
+    <iframe src="inicial.html" name="trabalhos" style="border=0;" width="100%" height="88%" frameborder="0"></iframe>
+</body>
+</html>

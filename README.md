@@ -1,3 +1,2 @@
 # Primeiro_Portifolio
-Portifolio com alguns códigos que eu fiz no meu ensino médio.
-Utilizando apenas HTML e CSS.
+Portifolio com algumas páginas feitas no ensino médio, utilizando apenas HTML e CSS.
